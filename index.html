@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 05</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="flexbox">
+        <article>
+            <header>
+                <h1>Lista de Compras</h1>
+            </header>
+            <section>
+                <input type="text" placeholder="Insira uma compra" id="nome_produto" autocomplete="off" required><br>
+                <small></small>
+            </section>
+            <section>
+                <h3>Tipo:</h3>
+                <input type="radio" name="tipo" id="graos"><label>Grãos</label><br>
+                <input type="radio" name="tipo" id="massas"><label>Massa</label><br>
+                <input type="radio" name="tipo" id="verduras"><label>Verdura</label><br>
+                <input type="radio" name="tipo" id="frutas"><label>Fruta</label><br>
+                <input type="radio" name="tipo" id="laticinios"><label>Laticínio</label><br>
+                <input type="radio" name="tipo" id="congelados"><label>Congelado</label><br>
+                <input type="radio" name="tipo" id="doces"><label>Doce</label><br>
+                <input type="radio" name="tipo" id="limpezas"><label>Limpeza</label><br>
+            </section>
+            <section id="buttons">
+                <input type="button" value="Adicionar" onclick="produto.Adicionar()">
+            </section>
+        </article>
+        <article id="resultado">
+            <section>
+                <div id="coluna_naoEspecificado">
+                    <h5>Não Especificado</h5>
+                </div>
+                <div id="coluna_grao" class="interior" style="border-left: 1px solid aliceblue">
+                    <h5>Grãos</h5>
+                </div>
+                <div id="coluna_massa" class="interior">
+                    <h5>Massas</h5>
+                </div>
+                <div id="coluna_verdura" class="interior">
+                    <h5>Verduras</h5>
+                </div>
+                <div id="coluna_fruta" class="interior">
+                    <h5>Frutas</h5>
+                </div>
+                <div id="coluna_laticinio" class="interior">
+                    <h5>Laticínios</h5>
+                </div>
+                <div id="coluna_congelado" class="interior">
+                    <h5>Congelados</h5>
+                </div>
+                <div id="coluna_doce" class="interior" style="border-right: 1px solid aliceblue">
+                    <h5>Doces</h5>
+                </div>
+                <div id="coluna_limpeza">
+                    <h5>Limpeza</h5>
+                </div>    
+            </section>
+        </article>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -13,7 +13,7 @@
                 <h1>Lista de Compras</h1>
             </header>
             <section>
-                <input type="text" placeholder="Insira uma compra" id="nomeProduto" autocomplete="off" required><br>
+                <input autofocus="true" type="text" placeholder="Insira um produto" id="nomeProduto" autocomplete="off" required><br>
                 <small></small>
             </section>
             <section>
@@ -28,7 +28,8 @@
                 <input type="radio" name="tipo" id="limpezas"><label>Limpeza</label><br>
             </section>
             <section id="buttons">
-                <input type="button" value="Adicionar" onclick="produto.SalvarDados()">
+                <input type="button" value="Adicionar" onclick="produto.SalvarDados()" id="btnAdicionar">
+                <input type="button" value="Cancelar" onclick="produto.CancelarElementos()" id="btnCancelar">
             </section>
         </article>
         <article id="resultado">
